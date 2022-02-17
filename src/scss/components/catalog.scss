@@ -1,0 +1,51 @@
+/*-------- Catalog --------*/
+
+.catalog {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+
+    overflow: hidden;
+    background-color: #fff;
+
+    &__list {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: -8rem;
+        margin-right: -8rem;
+    }
+
+    &__list--v2 {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1.75rem;
+        margin-bottom: 1.75rem;
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+    }
+
+    &__list &__item {
+        width: 25%;
+    }
+
+    &__item:not(:first-child) {
+        margin-left: 20px;
+    }
+
+    &__gif {
+        width: 100%;
+        border-radius: 0.75rem;
+    }
+
+    &__info {
+        margin-top: 1.75rem;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+
+        font-size: 1.5rem;
+        color: $sea;
+        text-align: center;
+        font-weight: 900;
+    }
+}

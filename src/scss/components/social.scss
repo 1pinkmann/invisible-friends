@@ -1,0 +1,21 @@
+/*-------- Social --------*/
+
+.social {
+    display: flex;
+
+    &__item:not(:first-child) {
+        margin-left: 16px;
+    }
+
+    &__link {
+        display: block;
+    }
+
+    &__icon {
+        display: block;
+        width: 32px;
+        height: 32px;
+
+        transition: color 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+}

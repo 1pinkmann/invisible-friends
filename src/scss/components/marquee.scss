@@ -1,0 +1,17 @@
+/*-------- Marquee --------*/
+
+.marquee {
+    background-color: $orange;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        height: 52px;
+
+        font-size: 1.875rem;
+        color: $orange;
+        text-transform: uppercase;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 0.3);
+    }
+}

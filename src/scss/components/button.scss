@@ -1,0 +1,27 @@
+/*-------- Button --------*/
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 64px;
+
+    border-radius: 9999px;
+    border: 4px dashed #fff;
+    padding: 0 1.5rem;
+    letter-spacing: .05em;
+
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+
+    opacity: 0.3;
+
+    transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
