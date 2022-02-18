@@ -15,6 +15,7 @@
     }
 
     &__gif {
+        max-width: 100%;
         margin-top: -9rem;
     }
 
@@ -34,5 +35,43 @@
 
     &__button {
         margin-top: 32px;
+    }
+}
+
+@media (max-width: 1099px) {
+
+    .banner {
+
+        &__title {
+            font-size: 6rem;
+        }
+
+        &__minted-value {
+            font-size: 3rem;
+        }
+
+        &__minted-title {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+        }
+
+        &__button {
+            height: 60px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .banner {
+
+        &__title {
+            font-size: 3.75rem;
+        }
+
+        &__gif {
+            margin-top: -4rem;
+        }
     }
 }

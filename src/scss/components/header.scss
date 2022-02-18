@@ -6,7 +6,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1.75rem;
+
+        padding-top: 1.75rem;
+        padding-bottom: 1.75rem;
     }
 
     &__link {
@@ -32,5 +34,34 @@
         display: block;
         width: 100%;
         height: 100%;
+    }
+}
+
+@media (max-width: 1099px) {
+
+    .header {
+
+        &__wrapper {
+            padding: 1.25rem;
+        }
+    }
+}
+
+@media (max-width: 619px) {
+
+    .header {
+
+        &__wrapper {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+
+        &__logo {
+            width: 2rem;
+        }
+
+        &__link {
+            font-size: 1.25rem;
+        }
     }
 }

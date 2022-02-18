@@ -18,3 +18,20 @@
         margin-top: 1.5rem;
     }
 }
+
+@media (max-width: 1099px) {
+
+    .footer {
+        padding: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .footer {
+
+        &__link-icon {
+            width: 4rem;
+        }
+    }
+}

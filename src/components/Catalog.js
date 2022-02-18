@@ -15,7 +15,7 @@ export default function Catalog() {
                     );
                 })}
             </ul>
-            <ul className="catalog__list catalog__list--v2">
+            <ul className="catalog__list catalog__list--v2 container">
                 {tokens.map((item, index) => {
                     return ((index >= 5) && (index < 9)) && (
                         <li className="catalog__item" key={index}>
@@ -37,7 +37,7 @@ export default function Catalog() {
                     );
                 })}
             </ul>
-            <h2 className="catalog__info">THESE ARE PREVIEWS, NOT ACTUAL TOKENS. MORE ON TWITTER.</h2>
+            <h2 className="catalog__info container">THESE ARE PREVIEWS, NOT ACTUAL TOKENS. MORE ON TWITTER.</h2>
         </div>
     )
 }

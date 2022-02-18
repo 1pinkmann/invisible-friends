@@ -19,8 +19,6 @@
         margin-right: 0;
         margin-top: 1.75rem;
         margin-bottom: 1.75rem;
-        padding-left: 1.75rem;
-        padding-right: 1.75rem;
     }
 
     &__list &__item {
@@ -32,6 +30,7 @@
     }
 
     &__video{
+        display: block;
         width: 100%;
         border-radius: 0.75rem;
     }
@@ -40,12 +39,60 @@
         margin-top: 1.75rem;
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
 
         font-size: 1.5rem;
         color: $sea;
         text-align: center;
         font-weight: 900;
+    }
+}
+
+@media (max-width: 1099px) {
+
+    .catalog {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+
+        &__info {
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            margin-top: 1.25rem;
+            font-size: 1.25rem;
+        }
+
+        &__list--v2 {
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .catalog {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+
+        &__list:not(.catalog__list--v2) {
+            margin-left: -2.5rem;
+            margin-right: -2.5rem;
+        }
+
+        &__list--v2 {
+            padding-left: 0.25rem;
+            padding-right: 0.25rem;
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+        &__item:not(:first-child) {
+            margin-left: 0.25rem;
+        }
+
+        &__info {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            margin-top: 0.25rem;
+        }
     }
 }

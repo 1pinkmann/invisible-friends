@@ -9,7 +9,7 @@ export default function Header() {
     return (
         <header className="header">
             <CustomMarquee />
-            <div className="header__wrapper">
+            <div className="header__wrapper container">
                 <a href="/" className="header__link">
                     <span>Shop</span>
                     <Goto className="header__link-icon" />

@@ -54,11 +54,8 @@ input[type="number"] {
 }
 
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
 }
 
 .scrollwrapper {
@@ -85,6 +82,14 @@ input[type="number"] {
         &::-webkit-scrollbar {
             width: 0px;
         }
+    }
+}
+
+@media (max-width: 1099px) {
+
+    .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
     }
 }
 
