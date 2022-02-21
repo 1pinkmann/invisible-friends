@@ -9,14 +9,15 @@ import { ethers } from "ethers";
 import Quantity from "./components/common/Quantity";
 
 const NODE_URL = "https://rinkeby-light.eth.linkpool.io/";
-const nftAddress = "0x66A736175224240E9754dfd1C69A471ce3702Cb8";
+const nftAddress = "0xD2B7D5acCD7EAA79b54967dff9247D791aB300cc";
+// const nftAddress = "0x66A736175224240E9754dfd1C69A471ce3702Cb8";
 
 export default function App() {
   const [userAddress, setUserAddress] = useState("");
   const [userNFTs, setUserNFTs] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [value, setValue] = useState(1);
-  const [minted, setMinted] = useState("0");
+  const [minted, setMinted] = useState("1468");
 
   const connectWallet = async () => {
     console.log("hola");
@@ -87,7 +88,7 @@ export default function App() {
       let receipt = await tx.wait();
       if (receipt) {
         console.log(receipt);
-        checkMinted();
+        // checkMinted();
       }
     } catch (error) {
       console.log(error, "handleMint");
@@ -99,7 +100,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    checkMinted();
+    // checkMinted();
   }, []);
 
   return (
