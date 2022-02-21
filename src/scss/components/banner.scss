@@ -1,77 +1,101 @@
 /*-------- Banner --------*/
 
 .banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 56px;
 
+  text-align: center;
+
+  &__title {
+    font-size: 8rem;
+    color: $orange;
+    font-weight: 900;
+  }
+
+  &__gif {
+    max-width: 100%;
+    margin-top: -9rem;
+  }
+
+  &__minted {
+    color: $sea;
+    opacity: 0.3;
+  }
+
+  &__minted-value {
+    font-size: 6rem;
+  }
+
+  &__minted-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  &__button {
+    margin-top: 32px;
+  }
+
+  &__mint {
+    margin-top: 32px;
+  }
+
+  &__mint-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: #445c7f;
+  }
+}
+
+.quantity {
+  display: flex;
+  &__button {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: #445c7f;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  &__value {
+    font-size: 1.3rem;
     text-align: center;
-
-    &__title {
-        font-size: 8rem;
-        color: $orange;
-        font-weight: 900;
-    }
-
-    &__gif {
-        max-width: 100%;
-        margin-top: -9rem;
-    }
-
-    &__minted {
-        color: $sea;
-        opacity: 0.3;
-    }
-
-    &__minted-value {
-        font-size: 6rem;
-    }
-
-    &__minted-title {
-        font-size: 1.875rem;
-        line-height: 2.25rem;
-    }
-
-    &__button {
-        margin-top: 32px;
-    }
+    // line-height: 2.25rem;
+    color: #445c7f;
+  }
 }
 
 @media (max-width: 1099px) {
-
-    .banner {
-
-        &__title {
-            font-size: 6rem;
-        }
-
-        &__minted-value {
-            font-size: 3rem;
-        }
-
-        &__minted-title {
-            font-size: 1.875rem;
-            line-height: 2.25rem;
-        }
-
-        &__button {
-            height: 60px;
-            font-size: 20px;
-        }
+  .banner {
+    &__title {
+      font-size: 6rem;
     }
+
+    &__minted-value {
+      font-size: 3rem;
+    }
+
+    &__minted-title {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+
+    &__button {
+      height: 60px;
+      font-size: 20px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
-
-    .banner {
-
-        &__title {
-            font-size: 3.75rem;
-        }
-
-        &__gif {
-            margin-top: -4rem;
-        }
+  .banner {
+    &__title {
+      font-size: 3.75rem;
     }
+
+    &__gif {
+      margin-top: -4rem;
+    }
+  }
 }
