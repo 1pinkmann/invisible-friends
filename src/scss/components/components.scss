@@ -1,14 +1,17 @@
 /*-------- Basic --------*/
-@import './basic.scss';
-@import './header.scss';
-@import './footer.scss';
+@import "./basic.scss";
+@import "./header.scss";
+@import "./footer.scss";
 
 /*-------- Elements --------*/
-@import './button.scss';
-@import './social.scss';
-@import './marquee.scss';
+@import "./button.scss";
+@import "./social.scss";
+@import "./marquee.scss";
 
 /*-------- Sections --------*/
-@import './banner.scss';
-@import './catalog.scss';
-@import './desc.scss';
+@import "./banner.scss";
+@import "./catalog.scss";
+@import "./desc.scss";
+
+/*-------- Popup --------*/
+@import "./popup.scss";
